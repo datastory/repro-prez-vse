@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Replikovatelný výzkum a prezentace dat - VŠE Peraha 19. dubna 2018</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono);
+      body { font-family: 'Roboto'; }
+      .remark-code, .remark-inline-code { font-family: 'Roboto Mono'; }
+      img {max-width: 700px; max-height: 350px}
+    </style>
+  </head>
+  <body>
+<textarea id="source">
+
+class: center, middle
+
+# Replikovatelný výzkum a prezentace dat
+
+![logo iROZHLAS.cz](img/logo.jpg)
+
+### Jan Cibulka, [@jancibulka](https://twitter.com/jancibulka)
+
+[http://datastory.cz/repro-prez-vse/](http://datastory.cz/repro-prez-vse/)
+
+---
+## Co děláme?
+[iROZHLAS.cz](https://www.irozhlas.cz/zpravy-tag/datova-zurnalistika)
+
+### Analyzujeme data
+![prezidenti](img/ipy.jpg)
+---
+
+## Prezentujeme výsledky
+[Hrozí Česku 'polský scénář' a pokuty...](https://www.irozhlas.cz/zpravy-domov/hrozi-cesku-polsky-scenar-a-pokuty-za-spinavy-vzduch-podivejte-se-na-mapu-kde-se_1802270600_jab)
+[Intenzivní zemědělství ničí českou přírodu...](https://www.irozhlas.cz/zpravy-domov/intenzivni-zemedelstvi-nici-ceskou-prirodu-mnohe-druhy-ptaku-na-polich-nepreziji_1803120600_cib)
+
+![prezidenti](img/vzduch_map.jpg)
+![prezidenti](img/ptaci_graf.jpg)
+
+---
+## Reprodukovatelnost = kontrola
+
+- Placení z veřejných peněz, [otevření ze zákona](https://www.zakonyprolidi.cz/cs/1999-106)
+- Neschováváme se za "know-how"
+- Potřebujeme hardcore fanoušky z data komunity
+- Děláme chyby
+
+![náš Git](img/github.jpg)
+
+[github.com/datarozhlas](https://github.com/datarozhlas)
+
+---
+## Prezentace výsledků
+
+- správně
+- srozumitelně
+- vizuálně atraktivně
+
+![náš Git](img/prez_map.jpg)
+
+[Koho volili vaši sousedi?](https://www.irozhlas.cz/volby/data-prezidentske-volby-mapa_1801271900_cib)
+
+---
+## Workflow
+
+- analýza
+- vizualizace + text
+- publikace & archivace
+
+![workflow](img/wflow.png)
+
+---
+## Jupyter
+
+- krokování
+- snadné [sdílení a prohlížení](https://github.com/DataRozhlas/scihub-stats/blob/master/analyza.ipynb)
+- kód je reprodukovatelný (stačí pustit)
+
+### => nízký práh vstupu
+
+[demo](http://jupyter.org/try)
+
+![http://blog.ibmjstart.net/2015/08/22/dynamic-dashboards-from-jupyter-notebooks/](img/jupyter_anim.gif)
+
+---
+## Vizualizace (JS)
+- funguje všem a všude (skoro)
+- serverless (bez údržby)
+- zadarmo (skoro)
+
+- [Highcharts](https://www.highcharts.com/)
+  - grafy
+- [Leaflet.js](http://leafletjs.com/)
+  - mapy
+
+[demo](https://dev.datarozhlas.cz/smog-map/)
+[kód](https://github.com/DataRozhlas/smog-map)
+
+- [D3.js](https://d3js.org/)
+  - hardcore [věci](https://www.irozhlas.cz/zpravy-svet/rusove-proti-rusum-zeme-v-nevyhlasene-obcanske-valce_1504291200_zlo)
+
+  ![](img/grafiky.jpg)
+
+---
+## Verzování a publikace
+
+- [Github - verzování, spolupráce](https://github.com/)
+- [S3 - storage](https://aws.amazon.com/s3/)
+- [Lambda - práce](https://aws.amazon.com/lambda/)
+
+![GIT merge](https://media1.tenor.com/images/907ca4314bc8af09f6c3ca5719d60f7e/tenor.gif?itemid=5920259)
+
+---
+## Ukázky & dotazy?
+
+[iROZHLAS.cz](https://www.irozhlas.cz/zpravy-tag/datova-zurnalistika)
+[prezentace: http://datastory.cz/repro-prez-vse/](http://datastory.cz/repro-prez-vse/)
+
+
+Případně pište (dotazy, stáž...) na [jan.cibulka@rozhlas.cz](mailto:jan.cibulka@rozhlas.cz)
+</textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>
+  var slideshow = remark.create();
+</script>
+  </body>
+</html>
